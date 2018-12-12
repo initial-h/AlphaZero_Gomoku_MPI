@@ -86,6 +86,7 @@ Most settings are the same with AlphaGo Zero, details as follow :
   * Weights between prior probabilities and noises are not changed here (0.75/0.25), though I think maybe 0.8/0.2 or even 0.9/0.1 is better because noises are added in every node
 * parameters in detail
   * I try to maintain the original parameters in AlphaGo Zero paper, so as to testify it's generalization. Besides, I also  take training time and computer configuration into consideration.
+  
     |Parameters Setting|      Gomoku  |AlphaGo Zero     |
     |:---------------: |:------------:|:---------------:|
     |      MPI num     | 43           |-                |
@@ -99,6 +100,7 @@ Most settings are the same with AlphaGo Zero, details as follow :
     | dirichlet noise  | 0.3          |0.03             |
     | weight of noise  | 0.25         | 0.25            |
     |     first n move | 12           |30               |
+    
 * Training detials
   * I train the model for about 100,000 games and takes 800 hours or so
   * Computer configuration : 2 CPU and 2 1080ti GPU
@@ -112,7 +114,7 @@ Most settings are the same with AlphaGo Zero, details as follow :
   * **Add Noise in Node** : In [junxiaosong/AlphaZero_Gomoku](https://github.com/junxiaosong/AlphaZero_Gomoku), noises are added outside the tree, seemingly like DQN's `$\epsilon-greedy$` way. It's ok when I test on 6x6 and 8x8 board, but when on 11x11 some problems occur. After a long time training on 11x11, black player will always play the first stone in the middle place with policy probability equal to 1. It's very rational for black to play here, however, the white player will never see other kifu that play in the other place at first stone. So, when I play black with AI and place somewhere not the middle place, AI will get very stupid because it has never seen this way at all. Add noise in node can mitigate the problem
   * Smaller Weight with Noise : As I said before, I think maybe 0.8/0.2 or even 0.9/0.1 is a better choice between prior probabilities and noises' weights, because noises are added in every node
 * Randomness
-  * **Dihedral Reflection or Rotation** : When use the network to output probabilities/value, it's better to do as paper said: The leaf node `$s_L$` is added to a queue for neural network evaluation, `$(d_i(p),v)=f_{\theta}(d_i(s_L))$`, where `$d_i$` is a dihedral reflection or rotation selected uniformly at random from `$i$` in `$[1..8]$`
+  * **Dihedral Reflection or Rotation** : When use the network to output probabilities/value, it's better to do as paper said: The leaf node `$s_L$` is added to a queue for neural network evaluation, `$$(d_i(p),v)=f_{\theta}(d_i(s_L))$$`, where `$d_i$` is a dihedral reflection or rotation selected uniformly at random from `$i$` in `$[1..8]$`
   * Add Randomness when Test : I add the dihedral reflection or rotation also when play with it, so as to avoid to play the same game all the time
 * Tradeoffs
   * Network Depth : If the network is too shallow, loss will increase. If too deep, it's slow when train and test. (My network is still a little slow when play with it, I think maybe 9 blocks is all right)
