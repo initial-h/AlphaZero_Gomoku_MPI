@@ -121,7 +121,7 @@ Most settings are the same with AlphaGo Zero, details as follow :
   * Buffer Size : If the size is small, it's easy to fit by network but can't guarantee it's performance for only learning from these few data. If it's too large, much longer time and deeper network structure should be taken
   * Playout Number : If small, it's quick to finish a self-play game but can't guarantee kifu's quality. On the contrary with more playout times, better kifu will get but also take longer time
 
-## Future Work Can Try
+## Future Work
 * Continue to train (a larger board) and increase the playout number
 * Try some other parameters for better performance
 * Alter network structure
