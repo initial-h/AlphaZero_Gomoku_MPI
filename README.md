@@ -4,7 +4,7 @@
 
 ## Overview
 This repo is based on [junxiaosong/AlphaZero_Gomoku](https://github.com/junxiaosong/AlphaZero_Gomoku), sincerely grateful for it.
-< a href=" " target="_blank">< img src="https://latex.codecogs.com/gif.latex?x&space;=&space;a_0&space;&plus;&space;\frac{1}x&space;=&space;a_0&space;&plus;&space;\frac{1}{a_1&space;&plus;&space;\frac{1}{a_2&space;&plus;&space;\frac{1}{a_3&space;&plus;&space;a_4}}}{a_1&space;&plus;&space;\frac{1}{a_2&space;&plus;&space;\frac{1}{a_3&space;&plus;&space;a_4}}}" title="x = a_0 + \frac{1}x = a_0 + \frac{1}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}{a_1 + \frac{1}{a_2 + \frac{1}{a_3 + a_4}}}" /></ a>
+
 I do these things:
 * **Implement asynchronous self-play training pipeline in parallel like AlphaGo Zero's way**
 * **Write a root parallel mcts (vote a move using ensemble way)**
