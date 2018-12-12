@@ -66,7 +66,7 @@ mpiexec -np 43 python -u train_mpi.py
 
 ## Algorithm
 It's almost no difference between AlphaGo Zero except APV-MCTS.
-A PPT can be found in dir [demo/slides]("demo/")
+A PPT can be found in dir [demo/slides](https://github.com/initial-h/AlphaZero_Gomoku_MPI/tree/master/demo/slides)
 
 <img src="demo/algorithm.png" width=1000>
 
