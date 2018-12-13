@@ -84,7 +84,7 @@ Most settings are the same with AlphaGo Zero, details as follow :
 * Dirichlet Noise
   * I add dirichlet noises in each node, it's different from paper that only add noises in root node. I guess AlphaGo Zero discard the whole tree after each move and rebuild a new tree, while here I keep the nodes under the chosen action, it's a little different
   * Weights between prior probabilities and noises are not changed here (0.75/0.25), though I think maybe 0.8/0.2 or even 0.9/0.1 is better because noises are added in every node
-* parameters in detail
+* Parameters in Detail
   * I try to maintain the original parameters in AlphaGo Zero paper, so as to testify it's generalization. Besides, I also  take training time and computer configuration into consideration.
   
     |Parameters Setting|      Gomoku  |AlphaGo Zero     |
