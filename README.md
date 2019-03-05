@@ -2,6 +2,9 @@
 
 <img src="demo/demo.gif" width=400 >
 
+## Updating
+* **2019.03.05 -- upload a 15x15 board [model](https://github.com/initial-h/AlphaZero_Gomoku_MPI/tree/master/model_15_15_5)**
+
 ## Overview
 This repo is based on [junxiaosong/AlphaZero_Gomoku](https://github.com/junxiaosong/AlphaZero_Gomoku), sincerely grateful for it.
 
