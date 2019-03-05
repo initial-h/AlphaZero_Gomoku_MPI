@@ -1,0 +1,2 @@
+model_checkpoint_path: "best_policy.model"
+all_model_checkpoint_paths: "best_policy.model"
