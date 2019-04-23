@@ -40,9 +40,9 @@ Blog
 
 > tensorflow/tensorlayer/pygame install : 
 ```
-conda install tensorflow
-conda install tensorlayer
-conda install pygame
+pip install tensorflow
+pip install tensorlayer
+pip install pygame
 ```
 
 > mpi4py install [click here](https://www.jianshu.com/p/ba6f7c9415a0)
