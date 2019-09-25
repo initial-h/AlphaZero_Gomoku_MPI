@@ -30,11 +30,11 @@ Blog
 * [mpi4py blog -- author: 自可乐](https://www.jianshu.com/p/505ab84fe725)
 
 ## Installation Dependencies
-* Python3
-* tensorflow>=1.8.0
-* tensorlayer>=1.8.5
-* mpi4py (parallel train and play)
-* pygame (GUI)
+* Python3 (my own 3.6.8)
+* tensorflow>=1.8.0 (my own 1.12.0)
+* tensorlayer>=1.8.5 (my own 1.10.1)
+* mpi4py (parallel train and play)(my own 2.0.0)
+* pygame (GUI)(my own 1.9.6)
 
 ## How to Install
 
