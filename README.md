@@ -11,7 +11,7 @@ This repo is based on [junxiaosong/AlphaZero_Gomoku](https://github.com/junxiaos
 
 I do these things:
 * **Implement asynchronous self-play training pipeline in parallel like AlphaGo Zero's way**
-* **Write a root parallel mcts (vote a move using ensemble way)**
+* **Write a root parallel MCTS when play against it (vote a move using ensemble way)**
 * **Use ResNet structure to train the model and set a transfer learning API to train a larger board model based on small board's model (like pre-training way in order to save time)**
  
 Strength
