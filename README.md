@@ -133,3 +133,15 @@ Most settings are the same with AlphaGo Zero, details as follow :
 * Implement APV-MCTS
 * Train on standard/renju rule
 
+## Bibtex
+
+```
+@article{zhang2020alphazero,
+  title={AlphaZero},
+  author={Zhang, Hongming and Yu, Tianyang},
+  journal={Deep Reinforcement Learning: Fundamentals, Research and Applications},
+  pages={391--415},
+  year={2020},
+  publisher={Springer}
+}
+```
